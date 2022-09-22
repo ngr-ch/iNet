@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>IP Address </title> 
+	<style> 
+		h1 { 
+		color:green;
+		font-weight:bold;	
+		font-style:Consolas;
+		} 
+		
+		h2 {
+		color:red;
+		font-weight:bold;
+		}
+		h3 {
+		color:blue;
+		font-weight:bold;
+		}
+	</style> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+	</script> 
+
+	<script> 
+		/* Add "https://api.ipify.org?format=json" This method uses ipify.org api to get the clients IP Address. 
+		This method is completely free and no limitations of use. */ 
+
+		$.getJSON("https://api.ipify.org?format=json", 
+										function(data) { 
+
+			// userip element is where the IP will be displayed
+			$("#userip").html(data.ip); 
+		}) 
+	</script> 
+</head> 
+
+<body> 
+	<center> 
+		<h1><a href="https://fb.com/naga.c.goud">Facebook</a> follow</h1> 
+		<h3 id="userip" >IP Address</h3> 
+
+		<h2 id="userip">Thank you NaaG</h2> 
+
+	</center> 
+</body> 
+
+</html>
